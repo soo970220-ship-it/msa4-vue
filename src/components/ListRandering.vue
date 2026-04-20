@@ -21,7 +21,7 @@ async function getPicsum(){
 
 <template>
  <h1>리스트 렌더링</h1>
-<button type="butten" @click="getPicsum">추가</button>
+<button type="button" @click="getPicsum">추가</button>
  <div class="container">
     <div class="card" v-for="item in data" :key="item.id">
         <div class="card-img" :style="{backgroundImage: `url('${item.download_url}')`}"></div>
